@@ -1,6 +1,7 @@
 <mvc:View controllerName="employeedashboard.controller.View1"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
 	xmlns:tnt="sap.tnt"
 	height="100%">
 	<tnt:ToolPage id="toolPage">
@@ -272,7 +273,8 @@
                 <Text text="" />
             </cells>
             <cells>
-                <Text text="Pending" src="sap-icon://BusinessSuiteInAppSymbols/icon-thumb-up-filled" />
+                <Text text="Pending" />
+                <core:Icon src="{icon}" />
             </cells>
         </ColumnListItem>
         
