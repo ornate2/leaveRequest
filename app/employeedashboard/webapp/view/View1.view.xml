@@ -234,8 +234,8 @@
 
 	<Carousel class="sapUiContentPadding" loop="true">
 		<Image src="../images/banner1.jpg" alt="banner-img" />
-		<Image src="../images/banner1.jpg" alt="banner-img" />
-		<Image src="../images/banner1.jpg" alt="banner-img" />
+		<Image src="../images/banner2.jpg" alt="banner-img" />
+		<Image src="../images/banner3.jpg" alt="banner-img" />
 	</Carousel>
 					</ScrollContainer>
 					<ScrollContainer
