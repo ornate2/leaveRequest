@@ -124,7 +124,12 @@
 						<Text text="" />
 		 <VBox class="leaveCountsBox">
 		 <FlexBox alignItems="Center" justifyContent="Center" class="panelContainer">
-		<Panel headerText="Casual Leave (CL)" headerLevel="H4" fixed="true" class="box1 customPanelColor1">
+		<Panel headerText="Casual Leave (CL)"   class="box1 customPanelColor1">
+         <headerToolbar>
+                <Toolbar>
+                    <Title level="H4" text="Casual Leave (CL)"/>
+                </Toolbar>
+            </headerToolbar>
             <content>
               <ImageContent
 					class="sapUiLargeMarginTop  icon1"
@@ -139,7 +144,12 @@
 					</List>
             </content>
         </Panel>
-			<Panel headerText="Sick leave (SL)" headerLevel="H4" fixed="true" class="box1 customPanelColor2">
+			<Panel headerText="Sick leave (SL)"  class="box1 customPanelColor2">
+             <headerToolbar>
+                <Toolbar>
+                    <Title level="H4" text="Sick leave (SL)"/>
+                </Toolbar>
+            </headerToolbar>
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "
@@ -155,7 +165,12 @@
 					</List>
 				</content>
 			</Panel>
-			<Panel headerText="Leave without pay (LWP)" headerLevel="H4" fixed="true" class="box1 customPanelColor3">
+			<Panel headerText="Leave without pay (LWP)"  class="box1 customPanelColor3">
+             <headerToolbar>
+                <Toolbar>
+                    <Title level="H4" text="Leave without pay (LWP)"/>
+                </Toolbar>
+            </headerToolbar>
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "
@@ -171,7 +186,12 @@
 					</List>
 				</content>
 			</Panel>
-			<Panel headerText="Paternity leave (PL)" headerLevel="H4" fixed="true" class="box1 customPanelColor4">
+			<Panel headerText="Paternity leave (PL)"  class="box1 customPanelColor4">
+             <headerToolbar>
+                <Toolbar>
+                    <Title level="H4" text="Paternity leave (PL)"/>
+                </Toolbar>
+            </headerToolbar>
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "
@@ -187,7 +207,12 @@
 					</List>
 				</content>
 			</Panel>
-			<Panel headerText="Compensatory Off" headerLevel="H4" fixed="true" class="box1 customPanelColor5">
+			<Panel headerText="Compensatory Off"  class="box1 customPanelColor5">
+             <headerToolbar>
+                <Toolbar>
+                    <Title level="H4" text="Compensatory Off"/>
+                </Toolbar>
+            </headerToolbar>
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "
