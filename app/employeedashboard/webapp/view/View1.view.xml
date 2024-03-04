@@ -238,7 +238,97 @@
 		<Image src="../images/banner3.jpg" alt="banner-img" />
 	</Carousel>
 
+    <Table>
+    <columns>
+        <Column width="12em">
+            <Text text="Date" />
+        </Column>
+        <Column minScreenWidth="Tablet" demandPopin="true">
+            <Text text="Leave Type" />
+        </Column>
+        <Column width="12em">
+            <Text text="Count" />
+        </Column>
+        <Column width="12em">
+            <Text text="Reason" />
+        </Column>
+        <Column width="12em">
+            <Text text="Approval Status" />
+        </Column>
+    </columns>
 
+    <items>
+        <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{Name}" text="4-march-2024" class="sapUiTinyMarginTopBottom" />
+            </cells>
+            <cells>
+                <Text text="Casual Leave (CL)" />
+            </cells>
+            <cells>
+                <Text text="1 Days" />
+            </cells>
+            <cells>
+                <Text text="" />
+            </cells>
+            <cells>
+                <Text text="Pending" src="sap-icon://BusinessSuiteInAppSymbols/icon-thumb-up-filled" />
+            </cells>
+        </ColumnListItem>
+        
+        <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{Name}" text="5-march-2024" class="sapUiTinyMarginTopBottom" />
+            </cells>
+            <cells>
+                <Text text="Sick leave (SL)" />
+            </cells>
+            <cells>
+                <Text text="4 Days" />
+            </cells>
+            <cells>
+                <Text text="" />
+            </cells>
+            <cells>
+                <Text text="approved" src="sap-icon://BusinessSuiteInAppSymbols/icon-thumb-up-filled" />
+            </cells>
+        </ColumnListItem>
+         <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{Name}" text="6-march-2024" class="sapUiTinyMarginTopBottom" />
+            </cells>
+            <cells>
+                <Text text="Leave without pay (LWP)" />
+            </cells>
+            <cells>
+                <Text text="5 Days" />
+            </cells>
+            <cells>
+                <Text text="" />
+            </cells>
+            <cells>
+                <Text text="Pending" src="sap-icon://BusinessSuiteInAppSymbols/icon-thumb-up-filled" />
+            </cells>
+        </ColumnListItem>
+         <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{Name}" text="7-march-2024" class="sapUiTinyMarginTopBottom" />
+            </cells>
+            <cells>
+                <Text text="Casual Leave (CL)" />
+            </cells>
+            <cells>
+                <Text text="2 Days" />
+            </cells>
+            <cells>
+                <Text text="" />
+            </cells>
+            <cells>
+                <Text text="approved" src="sap-icon://BusinessSuiteInAppSymbols/icon-thumb-up-filled" />
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>
     
 					</ScrollContainer>
 					<ScrollContainer
