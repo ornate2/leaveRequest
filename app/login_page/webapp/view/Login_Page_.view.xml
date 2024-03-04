@@ -1,0 +1,19 @@
+<mvc:View controllerName="loginpage.controller.Login_Page_"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <form:SimpleForm id="form">
+						<form:content>
+							<Title id="title" class="title" text="Ornate Technoservices Pvt Ltd."/>
+							<Label id="label1" class="label" text="UserName"/>
+							<Input class="input" id="user" placeholder="Enter UserName"/>
+							<Label  id="lable2" class="label" text="Password"/>
+							<Input class="pwdClass" id="pwd" type="Password" placeholder="Enter Password"/>
+						</form:content>
+					<Button icon="sap-icon://visits" id="btn" text="Login" type="Accept" press="onBtnClick"/>
+				</form:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

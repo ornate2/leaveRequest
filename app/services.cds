@@ -1,4 +1,4 @@
 
-using from './manage_leave/annotations';
+using from './login_page/annotations';
 
 using from './employee/annotations';

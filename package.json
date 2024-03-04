@@ -20,7 +20,8 @@
   "scripts": {
     "start": "cds-serve",
     "watch-manage_leave": "cds watch --open manage_leave/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-employee": "cds watch --open employee/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-employee": "cds watch --open employee/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-login_page": "cds watch --open login_page/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {

@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "manageleave",
+    "id": "loginpage",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.12.4",
-      "toolsId": "3faedd5b-3059-46fe-a9b5-f974f00aed06"
+      "toolsId": "9ddce553-db63-4eb8-bcb2-0bc5ee570601"
     },
     "dataSources": {
       "mainService": {
@@ -65,7 +65,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "manageleave.i18n.i18n"
+          "bundleName": "loginpage.i18n.i18n"
         }
       },
       "": {
@@ -91,32 +91,32 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "manageleave.view",
+        "viewPath": "loginpage.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
       },
       "routes": [
         {
-          "name": "RouteEmployee",
+          "name": "RouteLogin_Page_",
           "pattern": ":?query:",
           "target": [
-            "TargetEmployee"
+            "TargetLogin_Page_"
           ]
         }
       ],
       "targets": {
-        "TargetEmployee": {
+        "TargetLogin_Page_": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "Employee",
-          "viewName": "Employee"
+          "viewId": "Login_Page_",
+          "viewName": "Login_Page_"
         }
       }
     },
     "rootView": {
-      "viewName": "manageleave.view.App",
+      "viewName": "loginpage.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

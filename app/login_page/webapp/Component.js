@@ -5,12 +5,12 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "manageleave/model/models"
+        "loginpage/model/models"
     ],
     function (UIComponent, Device, models) {
         "use strict";
 
-        return UIComponent.extend("manageleave.Component", {
+        return UIComponent.extend("loginpage.Component", {
             metadata: {
                 manifest: "json"
             },

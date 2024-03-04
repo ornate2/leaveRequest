@@ -7,7 +7,7 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("employee.controller.employeeleave", {
+        return Controller.extend("employee.controller.EmployeePanel", {
             onInit: function () {
 
             }

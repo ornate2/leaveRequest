@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.12.4",
-      "toolsId": "37c079fe-4fb0-46e0-a250-0a917d97c522"
+      "toolsId": "be862c07-4cc5-4d31-811b-8d39466d0d23"
     },
     "dataSources": {
       "mainService": {
@@ -98,20 +98,20 @@
       },
       "routes": [
         {
-          "name": "Routeemployeeleave",
+          "name": "RouteEmployeePanel",
           "pattern": ":?query:",
           "target": [
-            "Targetemployeeleave"
+            "TargetEmployeePanel"
           ]
         }
       ],
       "targets": {
-        "Targetemployeeleave": {
+        "TargetEmployeePanel": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "employeeleave",
-          "viewName": "employeeleave"
+          "viewId": "EmployeePanel",
+          "viewName": "EmployeePanel"
         }
       }
     },
