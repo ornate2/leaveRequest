@@ -233,9 +233,9 @@
 			</VBox>
 
 	<Carousel class="sapUiContentPadding" loop="true">
-		<Image src="../images/banner1.jpg" alt="Example picture of speakers" />
-		<Image src="../images/banner2.jpg" alt="Example picture of spotlight" />
-		<Image src="../images/banner3.jpg" alt="Example picture of screw" />
+		<Image src="../images/banner1.jpg" alt="banner-img" />
+		<Image src="../images/banner1.jpg" alt="banner-img" />
+		<Image src="../images/banner1.jpg" alt="banner-img" />
 	</Carousel>
 					</ScrollContainer>
 					<ScrollContainer
