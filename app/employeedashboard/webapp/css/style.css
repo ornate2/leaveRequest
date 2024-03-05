@@ -38,3 +38,6 @@
 .sapMPanelBGTranslucent {
     background-color: #fff0 !important;
 }
+.btn-one {
+    float: right;
+}

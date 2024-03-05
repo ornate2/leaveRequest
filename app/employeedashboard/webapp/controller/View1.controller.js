@@ -2,10 +2,15 @@ sap.ui.define([
     "sap/ui/Device",
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
+    "sap/m/Dialog",
     "sap/m/Popover",
     "sap/m/Button",
-    "sap/m/library"
-], function (Device, Controller, JSONModel, Popover, Button, library) {
+    "sap/m/library",
+    "sap/m/Text",
+   
+  
+    "sap/ui/core/IconPool"
+], function (Device, Controller, JSONModel, Dialog, Popover, Button, library , Text,  IconPool) {
     "use strict";
 
     var ButtonType = library.ButtonType,
@@ -63,7 +68,58 @@ sap.ui.define([
             } else {
                 oToggleButton.setTooltip('Small Size Navigation');
             }
-        }
+        },
+     
+        onEscapePreventDialogPress: function () {
+                    if (!this.oEscapePreventDialog) {
+                        this.oEscapePreventDialog = new Dialog({
+                            title: "Apply Leave",
+                            content: new Text({ 
+                                text: "Try to close this Dialog with the Escape key",
+                                styleClass: "sapUiSmallMargin" // Setting the style class directly
+                            }),
+                            
+                            buttons: [
+                                new Button({
+                                    text: "Simply close",
+                                    press: function () {
+                                        this.oEscapePreventDialog.close();
+                                    }.bind(this)
+                                })
+                            ],
+                            escapeHandler: function (oPromise) {
+                                if (!this.oConfirmEscapePreventDialog) {
+                                    this.oConfirmEscapePreventDialog = new Dialog({
+                                        title: "Are you sure?",
+                                        content: new Text({ text: "Your unsaved changes will be lost" }),
+                                        type: DialogType.Message,
+                                        icon: IconPool.getIconURI("message-information"),
+                                        buttons: [
+                                            new Button({
+                                                text: "Yes",
+                                                press: function () {
+                                                    this.oConfirmEscapePreventDialog.close();
+                                                    oPromise.resolve();
+                                                }.bind(this)
+                                            }),
+                                            new Button({
+                                                text: "No",
+                                                press: function () {
+                                                    this.oConfirmEscapePreventDialog.close();
+                                                    oPromise.reject();
+                                                }.bind(this)
+                                            })
+                                        ]
+                                    });
+                                }
+        
+                                this.oConfirmEscapePreventDialog.open();
+                            }.bind(this)
+                        });
+                    }
+        
+                    this.oEscapePreventDialog.open();
+                }
 
     });
 });

@@ -2,6 +2,9 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
+
+	
+
 	xmlns:tnt="sap.tnt"
 	height="100%">
 	<tnt:ToolPage id="toolPage">
@@ -123,6 +126,16 @@
 						class="sapUiContentPadding">
 
 						<Text text="" />
+			
+		<Button
+			text="Apply Leave"
+			press=".onEscapePreventDialogPress"
+			class="sapUiSmallMarginBottom btn-one"
+			ariaHasPopup="Dialog" >
+			<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+		</Button>
 		 <VBox class="leaveCountsBox">
 		 <FlexBox alignItems="Center" justifyContent="Center" class="panelContainer">
 		<Panel headerText="Casual Leave (CL)"   class="box1 customPanelColor1">
