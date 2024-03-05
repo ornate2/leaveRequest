@@ -234,9 +234,9 @@
 			</VBox>
 
 	<Carousel class="sapUiContentPadding" loop="true">
-		<Image src="../images/banner1.jpg" alt="banner-img" />
-		<Image src="../images/banner2.jpg" alt="banner-img" />
-		<Image src="../images/banner3.jpg" alt="banner-img" />
+		<Image src="https://port4004-workspaces-ws-fnlwm.us10.trial.applicationstudio.cloud.sap/employeedashboard/webapp/images/banner1.jpg" alt="banner-img" />
+		<Image src="https://port4004-workspaces-ws-fnlwm.us10.trial.applicationstudio.cloud.sap/employeedashboard/webapp/images/banner2.jpg" alt="banner-img" />
+		<Image src="https://port4004-workspaces-ws-fnlwm.us10.trial.applicationstudio.cloud.sap/employeedashboard/webapp/images/banner3.jpg" alt="banner-img" />
 	</Carousel>
 
     <Table>
@@ -274,7 +274,7 @@
             </cells>
             <cells>
                 <Text text="Pending" />
-                <core:Icon src="{icon}" />
+                <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" />
             </cells>
         </ColumnListItem>
         
@@ -292,7 +292,8 @@
                 <Text text="" />
             </cells>
             <cells>
-                <Text text="approved" src="sap-icon://BusinessSuiteInAppSymbols/icon-thumb-up-filled" />
+                <Text text="approved" />
+                <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" />
             </cells>
         </ColumnListItem>
          <ColumnListItem>
@@ -309,7 +310,8 @@
                 <Text text="" />
             </cells>
             <cells>
-                <Text text="Pending" src="sap-icon://BusinessSuiteInAppSymbols/icon-thumb-up-filled" />
+                <Text text="Pending" />
+                <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" />
             </cells>
         </ColumnListItem>
          <ColumnListItem>
@@ -326,7 +328,8 @@
                 <Text text="" />
             </cells>
             <cells>
-                <Text text="approved" src="sap-icon://BusinessSuiteInAppSymbols/icon-thumb-up-filled" />
+                <Text text="approved" />
+                <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" />
             </cells>
         </ColumnListItem>
     </items>
